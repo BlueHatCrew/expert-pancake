@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>To-Do List | BlUEHATCREW</title>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1 id="listName">My To-Do List</h1>
-  <ul id="todoList"></ul>
-  <div id="addItemContainer">
-    <input type="text" id="newItemInput" placeholder="Add a new item">
-    <button id="addButton">Add</button>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+        <div class="header">
+            <h1 id="listName">My To-Do List</h1>
+            <label class="switch">
+                <input type="checkbox" id="toggleMode">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <ul id="todoList">
+        </ul>
+        <div class="inputContainer">
+            <input type="text" id="newItemInput" placeholder="Add a new item...">
+            <button id="addButton">+</button>
+        </div>
+    </div>
+<div id="popup">
+  <span id="close">&times;</span>
+  <img src="https://cdn.discordapp.com/attachments/1122561352343507004/1170880381503950920/IMG_9002.png?ex=655aa654&is=65483154&hm=51d856e897fcf1dfca4f7f19" alt="Popup Image">
+  <p>This site was made by the BlueHatCrew</p>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
